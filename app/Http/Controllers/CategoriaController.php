@@ -11,6 +11,7 @@ class CategoriaController extends Controller
 
     public function index(){
         //return response()->json(['categoria'=>Categoria::all()]);
+        //ya no retorna los datos mas formateados
         return new CategoriaCollection(Categoria::all());
     }
 }
